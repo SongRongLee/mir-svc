@@ -6,6 +6,7 @@ You can find demo audio files and comaprisons to the original PitchNet on our [d
 
 
 ## Table of contents
+- [Dataset](https://github.com/SongRongLee/singing-voice-conversion#dataset)
 - [Environment setup](https://github.com/SongRongLee/singing-voice-conversion#environment-setup)
 - [Scripts usage](https://github.com/SongRongLee/singing-voice-conversion#scripts-usage)
   - [Data augmentation](https://github.com/SongRongLee/singing-voice-conversion#data-augmentation)
@@ -17,6 +18,10 @@ You can find demo audio files and comaprisons to the original PitchNet on our [d
   - [Evaluation](https://github.com/SongRongLee/singing-voice-conversion#evaluation)
 - [License](https://github.com/SongRongLee/singing-voice-conversion#license)
 - [Citation](https://github.com/SongRongLee/singing-voice-conversion#citation)
+
+
+## Dataset
+We use [NUS-48E](https://smcnus.comp.nus.edu.sg/nus-48e-sung-and-spoken-lyrics-corpus/) dataset throughout the whole project. You can download it and perform data preprocessing and augmentation below.
 
 
 ## Environment setup
