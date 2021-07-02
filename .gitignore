@@ -1,0 +1,11 @@
+__pycache__/
+._.DS_Store
+.DS_Store
+
+model/*
+!model/.gitkeep
+converted/*
+!converted/.gitkeep
+plotting-scripts/plotting-results/*
+!plotting-scripts/plotting-results/.gitkeep
+tmp/*
