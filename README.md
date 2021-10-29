@@ -1,6 +1,6 @@
 # Unsupervised WaveNet-based Singing Voice Conversion Using Pitch Augmentation and Two-phase Approach
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)  
-This repository implements the singing voice conversion method described in [Pitchnet: Unsupervised Singing Voice Conversion with Pitch Adversarial Network](https://arxiv.org/abs/1912.01852) along with multiple improvements regarding its conversion quality using PyTorch. Detailed surveys and experiments have been published as a master thesis, you can view it [here](TODO).
+This repository implements the singing voice conversion method described in [Pitchnet: Unsupervised Singing Voice Conversion with Pitch Adversarial Network](https://arxiv.org/abs/1912.01852) along with multiple improvements regarding its conversion quality using PyTorch. Detailed surveys and experiments have been published as a master thesis, you can get it [here](https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-1107202111044100).
 
 You can find demo audio files and comaprisons to the original PitchNet on our [demo website](https://songronglee.github.io/singing-voice-conversion/).
 
@@ -166,4 +166,13 @@ You can get the singer classifier model we used in the evaluation [here](https:/
 
 
 ## Citation
-TODO
+```
+@article{songrong2021svc,
+  title     = {Unsupervised WaveNet-based Singing Voice Conversion Using Pitch Augmentation and Two-phase Approach},
+  author    = {Lee, Songrong},
+  journal   = {Graduate Institute of Networking and Multimedia, National Taiwan University Master Thesis},
+  pages     = {1--56},
+  year      = {2021},
+  publisher = {National Taiwan University}
+}
+```
