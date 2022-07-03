@@ -2,7 +2,7 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)  
 This repository implements the singing voice conversion method described in [Pitchnet: Unsupervised Singing Voice Conversion with Pitch Adversarial Network](https://arxiv.org/abs/1912.01852) along with multiple improvements regarding its conversion quality using PyTorch. Detailed surveys and experiments have been published as a master thesis, you can get it [here](https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-1107202111044100).
 
-You can find demo audio files and comaprisons to the original PitchNet on our [demo website](https://songronglee.github.io/singing-voice-conversion/).
+You can find demo audio files and comparisons to the original PitchNet on our [demo website](https://songronglee.github.io/singing-voice-conversion/).
 
 
 ## Table of contents
@@ -13,7 +13,7 @@ You can find demo audio files and comaprisons to the original PitchNet on our [d
   - [Data preprocessing](https://github.com/SongRongLee/singing-voice-conversion#data-preprocessing)
   - [Start training](https://github.com/SongRongLee/singing-voice-conversion#start-training)
   - [Converting an audio file](https://github.com/SongRongLee/singing-voice-conversion#converting-an-audio-file)
-  - [Ploting results](https://github.com/SongRongLee/singing-voice-conversion#ploting-results)
+  - [Plotting results](https://github.com/SongRongLee/singing-voice-conversion#ploting-results)
   - [Network summary & testing](https://github.com/SongRongLee/singing-voice-conversion#network-summary--testing)
   - [Evaluation](https://github.com/SongRongLee/singing-voice-conversion#evaluation)
 - [License](https://github.com/SongRongLee/singing-voice-conversion#license)
@@ -80,7 +80,7 @@ This script will read through the given `$raw_dir` and generate folders with the
 This script will train the model. If `--model-path` is given, the training will continue with that checkpoint. To see other training parameters, run the script with `-h`.  
 
 `python train.py $train_data_dir $model_dir --model $model --model-path $model_path`  
-- `train_data_dir`: Path to the proccesed data directory
+- `train_data_dir`: Path to the processed data directory
 - `model_dir`: Directory to save checkpoint models
 - `model`: Target model type
 - `model_path`: Path to pretrained model  
@@ -98,7 +98,7 @@ This script will perform singing voice conversion on the given audio file. For t
 - `two_phase`: Whether or not to perform two-phase conversion
 - `train_data_dir`: The original training data used for two-phase conversion
 
-### Ploting results
+### Plotting results
 #### Loss curves
 This script will plot the training loss curves of a given checkpoint. The output image will be stored in `plotting-scripts/plotting-results/`.  
 `python plotting-scripts/plot_loss.py $checkpoint_path --window-size $window_size --loss-types $loss_types`  
