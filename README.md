@@ -6,18 +6,19 @@ You can find demo audio files and comparisons to the original PitchNet on our [d
 
 
 ## Table of contents
-- [Dataset](https://github.com/SongRongLee/singing-voice-conversion#dataset)
-- [Environment setup](https://github.com/SongRongLee/singing-voice-conversion#environment-setup)
-- [Scripts usage](https://github.com/SongRongLee/singing-voice-conversion#scripts-usage)
-  - [Data augmentation](https://github.com/SongRongLee/singing-voice-conversion#data-augmentation)
-  - [Data preprocessing](https://github.com/SongRongLee/singing-voice-conversion#data-preprocessing)
-  - [Start training](https://github.com/SongRongLee/singing-voice-conversion#start-training)
-  - [Converting an audio file](https://github.com/SongRongLee/singing-voice-conversion#converting-an-audio-file)
-  - [Plotting results](https://github.com/SongRongLee/singing-voice-conversion#ploting-results)
-  - [Network summary & testing](https://github.com/SongRongLee/singing-voice-conversion#network-summary--testing)
-  - [Evaluation](https://github.com/SongRongLee/singing-voice-conversion#evaluation)
-- [License](https://github.com/SongRongLee/singing-voice-conversion#license)
-- [Citation](https://github.com/SongRongLee/singing-voice-conversion#citation)
+- [Dataset](https://github.com/SongRongLee/mir-svc#dataset)
+- [Environment setup](https://github.com/SongRongLee/mir-svc#environment-setup)
+- [Scripts usage](https://github.com/SongRongLee/mir-svc#scripts-usage)
+  - [Data augmentation](https://github.com/SongRongLee/mir-svc#data-augmentation)
+  - [Data preprocessing](https://github.com/SongRongLee/mir-svc#data-preprocessing)
+  - [Start training](https://github.com/SongRongLee/mir-svc#start-training)
+  - [Converting an audio file](https://github.com/SongRongLee/mir-svc#converting-an-audio-file)
+  - [Plotting results](https://github.com/SongRongLee/mir-svc#ploting-results)
+  - [Network summary & testing](https://github.com/SongRongLee/mir-svc#network-summary--testing)
+  - [Evaluation](https://github.com/SongRongLee/mir-svc#evaluation)
+- [Statistics](https://github.com/SongRongLee/mir-svc#statistics)
+- [License](https://github.com/SongRongLee/mir-svc#license)
+- [Citation](https://github.com/SongRongLee/mir-svc#citation)
 
 
 ## Dataset
@@ -155,6 +156,23 @@ This script will perform evaluation given evaluation data directory, output file
 
 You can get the singer classifier model we used in the evaluation [here](https://drive.google.com/file/d/1IoqfatYEL43pGFnAqSobl_XETQijFn3k/view?usp=sharing).
 
+
+## Statistics
+Below is the hardware used in these experiments and correspoding training & inference time for people who are interested in trying out the project. For more detailed analysis and experiment results, please refer to the [thesis](https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-1107202111044100).
+
+### Hardware
+| Part | Specification                            |
+|------|------------------------------------------|
+| CPU  | Intel(R) Core(TM) i9-9820X CPU @ 3.30GHz |
+| RAM  | 125GB                                    |
+| GPU  | TITAN RTX x2                             |
+| Disk | PLEXTOR PX-512M9PeGN                     |
+
+### Training time
+A complete training (300000 steps) takes around *40 hours*.
+
+### Inference time
+Converting *one second* of audio file takes around *3 minutes*.
 
 ## License
 [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)  
